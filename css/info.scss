@@ -1,0 +1,9 @@
+.class-time {
+    display: inline-block;
+    .time {
+        border-bottom: 1px solid #eee;
+    }
+    &:after {
+        content: " | ";
+    }
+}

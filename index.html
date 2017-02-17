@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>课表</title>
+    <link rel="stylesheet" type="text/css" href="css/min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.3/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="classes">
+        <h1>{{ title }}</h1>
+        <div class="description">
+            <small v-for="(text, type) in description">
+                <em>{{ type }}:</em>{{ text }}<br/>
+            </small>
+        </div>
+        <div class="info">
+            <p>
+                <strong>上课时间:</strong>
+                <template v-for="timeGroup in classTime">
+                <span v-for="time in timeGroup" class="class-time">
+                    <span class="text">
+                        {{ time.text }}
+                    </span>
+                    <span class="time">
+                        {{ time.start }}~{{ time.end }}.
+                    </span>
+                </span>
+                </template>
+            </p>
+            <p><strong>上课地点:</strong>
+                <span v-for="place in place">
+                    {{ place }}.
+                </span>
+            </p>
+        </div>
+        <table class="classTable">
+            <tbody v-for="week in weeks" class="week-table">
+                <tr :id="'week' + week" class="week">
+                    <th>第 {{ week }} 周</th>
+                    <th v-for="day in 7">
+                        {{ startDate | getDateHead(week - 1, day -1) }}
+                    </th>
+                </tr>
+                <template v-for="(timeGroup, key) in classTime">
+                <tr>
+                    <th rowspan="2">{{ timeGroup[0].text }}</th>
+                    <td v-for="day in 7">
+                        {{ getClass(startDate, week - 1, day - 1, key)
+                            ? getClass(startDate, week - 1, day - 1, key).subject
+                            : "&nbsp;" }}
+                    </td>
+                </tr>
+                <tr>
+                    <td v-for="day in 7">
+                        {{ getClass(startDate, week - 1, day - 1, key)
+                            ? getClass(startDate, week - 1, day - 1, key).detail
+                            : "&nbsp;" }}
+                    </td>
+                </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/classData.js"></script>
+    <script src="js/bindClass.js"></script>
+</body>
+
+</html>
