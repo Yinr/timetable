@@ -2,7 +2,7 @@ var vmComment = new Vue({
     el: '#comment',
     data: {
         duoshuo_name: "yinr",
-        key: encodeURI(location.host + location.pathname),
+        key: encodeURI(location.host + location.pathname).replace(/\/$/,""),
         title: document.title,
         image: "http://yinrs.win/favicon.ico",
         content: document.title,
