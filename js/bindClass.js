@@ -12,10 +12,14 @@ var vmClasses = new Vue({
     methods: {
         getClass: function(strDate, offsetWeeks, offsetDays, time) {
             var date = new Date(strDate);
+            function dateToString(date) {
+                var str = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
+                return str;
+            }
             date.setDate(date.getDate() +
                 (offsetDays ? offsetDays : 0) +
                 7 * (offsetWeeks ? offsetWeeks : 0));
-            var str = date.toLocaleDateString();
+            var str = dateToString(date);
             str = str + time;
             return this.classes[str];
         }
