@@ -1,0 +1,17 @@
+ base: different class in different group
+ base: numbers of classes in one time group
+ base: week starts from a number
+ feature: add back to top button
+ feature: add classes data export
+ feature: add footer - copyright & last update time
+ feature: add goto comment button
+ feature: add option for hide sevral time group
+ feature: add option for hide sevral weeks
+ feature: add search date
+ feature: add test and summary style class
+ feature: show only nearby weeks at start
+ style: decrease head margin-top
+ style: decrease line height
+ style: decrease p margin-top|bottom
+ style: highlight style of test and summary
+2017-02-18 23:59:09 +0800 feature: add comment
