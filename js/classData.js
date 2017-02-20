@@ -354,7 +354,8 @@ var classes = {
             detail: "李国勤"
         },
         "2017/5/10a": {
-            subject: "中医儿科见习"
+            subject: "中医儿科",
+            detail: "见习"
         },
         "2017/5/10p": {
             subject: "西医内科",
@@ -381,7 +382,8 @@ var classes = {
             detail: "王寅"
         },
         "2017/5/17a": {
-            subject: "中医儿科见习"
+            subject: "中医儿科",
+            detail: "见习"
         },
         "2017/5/17p": {
             subject: "西医内科",
@@ -452,7 +454,8 @@ var classes = {
             detail: "王燕平"
         },
         "2017/6/6a": {
-            subject: "西医内科针灸见习"
+            subject: "西医内科",
+            detail: "针灸见习"
         },
         "2017/6/6p": {
             subject: "西医内科",
