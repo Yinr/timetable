@@ -10,8 +10,7 @@ var classes = {
     },
     classTime: {
         a: [{ text: "上午", start: "8:30", end: "11:30" }],
-        p: [{ text: "下午", start: "13:30", end: "16:30" }],
-        e: [{ text: "晚上", start: "18:00", end: "21:20" }]
+        p: [{ text: "下午", start: "13:30", end: "16:30" }]
     },
     place: ["原幼儿园楼3楼教室", "西-8教", "西-1教"],
     groups: null,
@@ -116,10 +115,6 @@ var classes = {
             subject: "外科学概论",
             detail: "刘风华"
         },
-        "2017/3/18e": {
-            subject: "针灸治疗",
-            detail: "王燕平"
-        },
         "2017/3/20a": {
             subject: "针灸医案",
             detail: "李瑞"
@@ -150,10 +145,6 @@ var classes = {
         "2017/3/23p": {
             subject: "西医内科",
             detail: "周斌"
-        },
-        "2017/3/25e": {
-            subject: "针灸治疗",
-            detail: "王燕平"
         },
         "2017/3/27a": {
             subject: "针灸医案",
@@ -186,10 +177,6 @@ var classes = {
             subject: "外科学概论",
             detail: "董锡臣"
         },
-        "2017/4/1e": {
-            subject: "针灸治疗",
-            detail: "王燕平"
-        },
         "2017/4/3a": {
             subject: "针灸医案",
             detail: "李瑞"
@@ -212,10 +199,6 @@ var classes = {
         "2017/4/7a": {
             subject: "西医内科",
             detail: "刘绍能"
-        },
-        "2017/4/8e": {
-            subject: "针灸治疗",
-            detail: "王燕平"
         },
         "2017/4/10a": {
             subject: "针灸医案",
@@ -248,10 +231,6 @@ var classes = {
             subject: "外科学概论",
             detail: "李军（外）"
         },
-        "2017/4/15e": {
-            subject: "针灸治疗",
-            detail: "王燕平"
-        },
         "2017/4/17a": {
             subject: "针灸医案",
             detail: "李瑞"
@@ -282,10 +261,6 @@ var classes = {
         "2017/4/20p": {
             subject: "外科学概论",
             detail: "李军（外）"
-        },
-        "2017/4/22e": {
-            subject: "针灸治疗",
-            detail: "王燕平"
         },
         "2017/4/24p": {
             subject: "针灸治疗",
