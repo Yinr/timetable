@@ -100,16 +100,16 @@ var classes = {
             subject: "外科学概论",
             detail: "检验科"
         },
+        "2017/3/14p": {
+            subject: "西医内科",
+            detail: "姚魁武"
+        },
         "2017/3/15a": {
             subject: "中医儿科"
         },
         "2017/3/15p": {
             subject: "西医内科",
             detail: "胡元会"
-        },
-        "2017/3/16a": {
-            subject: "西医内科",
-            detail: "姚魁武"
         },
         "2017/3/16p": {
             subject: "外科学概论",
