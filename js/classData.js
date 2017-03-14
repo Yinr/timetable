@@ -107,10 +107,6 @@ var classes = {
         "2017/3/15a": {
             subject: "中医儿科"
         },
-        "2017/3/15p": {
-            subject: "西医内科",
-            detail: "胡元会"
-        },
         "2017/3/16p": {
             subject: "外科学概论",
             detail: "刘风华"
