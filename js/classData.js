@@ -111,6 +111,10 @@ var classes = {
             subject: "外科学概论",
             detail: "刘风华"
         },
+        "2017/3/17a": {
+            subject: "西医内科",
+            detail: "胡元会"
+        },
         "2017/3/20a": {
             subject: "针灸医案",
             detail: "李瑞"
