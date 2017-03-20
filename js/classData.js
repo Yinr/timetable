@@ -138,14 +138,6 @@ var classes = {
             subject: "西医内科",
             detail: "刘绍能"
         },
-        "2017/3/23a": {
-            subject: "西医内科",
-            detail: "姚魁武"
-        },
-        "2017/3/23p": {
-            subject: "西医内科",
-            detail: "周斌"
-        },
         "2017/3/27a": {
             subject: "针灸医案",
             detail: "李瑞"
