@@ -3,11 +3,11 @@ var vmClasses = new Vue({
     data: classes,
     updated: function() {
         document.title = classes.title;
-        thisWeek(this.startDate);
+        thisWeek(this.startDate, this.startWeek);
     },
     mounted: function() {
         document.title = classes.title;
-        thisWeek(this.startDate);
+        thisWeek(this.startDate, this.startWeek);
     },
     methods: {
         getClass: function(strDate, offsetWeeks, offsetDays, time) {
@@ -41,6 +41,9 @@ var vmClasses = new Vue({
             var str = date.toLocaleDateString();
             str = str + time;
             return str;
+        },
+        getWeek: function(week) {
+            return (week + classes.startWeek - 1);
         }
     }
 });
@@ -75,11 +78,11 @@ function getWeekString(day) {
 }
 
 // 当前周标注跳转
-function thisWeek(strDate) {
+function thisWeek(strDate, startWeek) {
     var today = new Date();
     var startDate = new Date(strDate) || new Date();
     var dayDiff = Math.floor((today.getTime() - startDate.getTime()) / 1000 / 3600 / 24);
-    var week = Math.floor(dayDiff / 7) + 1;
+    var week = Math.floor(dayDiff / 7) + (startWeek ? startWeek : 1);
     var thisWeek = document.getElementById("week" + week.toString());
     if (thisWeek == null) {
         console.log("Week " + week + " is not found!");
