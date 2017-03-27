@@ -169,11 +169,11 @@ var classes = {
             subject: "外科学概论",
             detail: "董锡臣"
         },
-        "2017/4/3a": {
+        "2017/4/1a": {
             subject: "针灸医案",
             detail: "李瑞"
         },
-        "2017/4/3p": {
+        "2017/4/1p": {
             subject: "针灸治疗",
             detail: "王燕平"
         },
