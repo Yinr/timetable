@@ -161,10 +161,6 @@ var classes = {
             subject: "中医妇科",
             detail: "郭永红"
         },
-        "2017/3/30a": {
-            subject: "西医内科",
-            detail: "李军"
-        },
         "2017/3/30p": {
             subject: "外科学概论",
             detail: "董锡臣"
@@ -191,6 +187,10 @@ var classes = {
         "2017/4/7a": {
             subject: "西医内科",
             detail: "刘绍能"
+        },
+        "2017/4/7p": {
+            subject: "西医内科",
+            detail: "李军"
         },
         "2017/4/10a": {
             subject: "针灸医案",
