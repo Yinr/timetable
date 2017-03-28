@@ -3,15 +3,16 @@ var vmClasses = new Vue({
     data: classes,
     updated: function() {
         document.title = classes.title;
-        thisWeek(this.startDate);
+        thisWeek(this.startDate, this.startWeek);
     },
     mounted: function() {
         document.title = classes.title;
-        thisWeek(this.startDate);
+        thisWeek(this.startDate, this.startWeek);
     },
     methods: {
-        getClass: function(strDate, offsetWeeks, offsetDays, time) {
-            var date = new Date(strDate);
+        getClass: function(dateString, offsetWeeks, offsetDays, time) {
+            var date = new Date(dateString);
+
             function dateToString(date) {
                 var str = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
                 return str;
@@ -25,22 +26,25 @@ var vmClasses = new Vue({
         }
     },
     filters: {
-        getDateHead: function(strDate, offsetWeeks, offsetDays) {
-            var date = new Date(strDate);
+        getDateHead: function(dateString, offsetWeeks, offsetDays) {
+            var date = new Date(dateString);
             date.setDate(date.getDate() +
                 (offsetDays ? offsetDays : 0) +
                 7 * (offsetWeeks ? offsetWeeks : 0));
             var str = (date.getMonth() + 1) + "." + date.getDate();
             return str + " " + getWeekString(date.getDay());
         },
-        getDateString: function(strDate, offsetWeeks, offsetDays, time) {
-            var date = new Date(strDate);
+        getDateString: function(dateString, offsetWeeks, offsetDays, time) {
+            var date = new Date(dateString);
             date.setDate(date.getDate() +
                 (offsetDays ? offsetDays : 0) +
                 7 * (offsetWeeks ? offsetWeeks : 0));
             var str = date.toLocaleDateString();
             str = str + time;
             return str;
+        },
+        getWeek: function(week) {
+            return (week + classes.startWeek - 1);
         }
     }
 });
@@ -75,11 +79,12 @@ function getWeekString(day) {
 }
 
 // 当前周标注跳转
-function thisWeek(strDate) {
+function thisWeek(dateString, startWeek) {
+    var MS_IN_DAY = 86400000; // 1000 * 3600 * 24
     var today = new Date();
-    var startDate = new Date(strDate) || new Date();
-    var dayDiff = Math.floor((today.getTime() - startDate.getTime()) / 1000 / 3600 / 24);
-    var week = Math.floor(dayDiff / 7) + 1;
+    var startDate = new Date(dateString) || new Date();
+    var dayDiff = Math.floor((today.getTime() - startDate.getTime()) / MS_IN_DAY);
+    var week = Math.floor(dayDiff / 7) + (startWeek ? startWeek : 1);
     var thisWeek = document.getElementById("week" + week.toString());
     if (thisWeek == null) {
         console.log("Week " + week + " is not found!");
