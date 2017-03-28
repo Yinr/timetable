@@ -40,8 +40,8 @@
         </div>
         <table class="classTable">
             <tbody v-for="week in weeks" class="week-table">
-                <tr :id="'week' + week" class="week">
-                    <th>第 {{ week }} 周</th>
+                <tr :id="'week' + (week + startWeek - 1)" class="week">
+                    <th>第 {{ week | getWeek }} 周</th>
                     <th v-for="day in 7">
                         {{ startDate | getDateHead(week - 1, day -1) }}
                     </th>
