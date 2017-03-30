@@ -164,7 +164,7 @@ var classes = {
         },
         "2017/3/30a": {
             subject: "西医内科",
-            detail: "周斌"
+            detail: "李军"
         },
         "2017/3/30p": {
             subject: "外科学概论",
@@ -195,7 +195,7 @@ var classes = {
         },
         "2017/4/7p": {
             subject: "西医内科",
-            detail: "李军"
+            detail: "周斌"
         },
         "2017/4/10a": {
             subject: "针灸医案",
