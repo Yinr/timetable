@@ -15,6 +15,10 @@ var classes = {
     },
     place: ["原幼儿园楼3楼教室", "西-8教", "西-1教"],
     groups: null,
+    settings: {
+        showAllWeeks: false,
+        thisWeek: 0
+    },
     classes: {
         "2017/2/20a": {
             subject: "针灸医案",

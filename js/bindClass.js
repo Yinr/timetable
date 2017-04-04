@@ -1,15 +1,22 @@
 var vmClasses = new Vue({
     el: '#classes',
     data: classes,
+    created: function() {
+        this.settings.showAllWeeks = false;
+        this.settings.thisWeek = getThisWeek(this.startDate, this.startWeek);
+    },
     updated: function() {
-        document.title = classes.title;
-        thisWeek(this.startDate, this.startWeek);
+        document.title = this.title;
+        gotoWeek(getThisWeek(this.startDate, this.startWeek));
     },
     mounted: function() {
-        document.title = classes.title;
-        thisWeek(this.startDate, this.startWeek);
+        document.title = this.title;
+        gotoWeek(getThisWeek(this.startDate, this.startWeek));
     },
     methods: {
+        toggleShowingWeeks: function() {
+            this.settings.showAllWeeks = ~this.settings.showAllWeeks;
+        },
         getClass: function(dateString, offsetWeeks, offsetDays, time) {
             var date = new Date(dateString);
 
@@ -23,6 +30,10 @@ var vmClasses = new Vue({
             var str = dateToString(date);
             str = str + time;
             return this.classes[str];
+        },
+        nearby: function(week, range) {
+            var range = range || 1;
+            return Math.abs(week - classes.settings.thisWeek) <= range;
         }
     },
     filters: {
@@ -78,13 +89,18 @@ function getWeekString(day) {
     return dayString;
 }
 
-// 当前周标注跳转
-function thisWeek(dateString, startWeek) {
+// 计算当前周
+function getThisWeek(dateString, startWeek) {
     var MS_IN_DAY = 86400000; // 1000 * 3600 * 24
     var today = new Date();
     var startDate = new Date(dateString) || new Date();
     var dayDiff = Math.floor((today.getTime() - startDate.getTime()) / MS_IN_DAY);
-    var week = Math.floor(dayDiff / 7) + (startWeek ? startWeek : 1);
+    var thisWeek = Math.floor(dayDiff / 7) + (startWeek ? startWeek : 1);
+    return thisWeek ? thisWeek : null;
+}
+
+// 特定周标注跳转
+function gotoWeek(week) {
     var thisWeek = document.getElementById("week" + week.toString());
     if (thisWeek == null) {
         console.log("Week " + week + " is not found!");
@@ -94,6 +110,7 @@ function thisWeek(dateString, startWeek) {
     window.location.hash = "week" + week.toString();
 }
 
+// 输出课程数据
 function printClasses() {
     return JSON.stringify(classes.classes, null, 4);
 }
