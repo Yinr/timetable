@@ -14,6 +14,10 @@ var vmClasses = new Vue({
         gotoWeek(getThisWeek(this.startDate, this.startWeek));
     },
     methods: {
+        nearby: function(week, range) {
+            var range = range || 1;
+            return Math.abs(week - classes.settings.thisWeek) <= range;
+        },
         toggleShowingWeeks: function() {
             this.settings.showAllWeeks = ~this.settings.showAllWeeks;
         },
@@ -31,9 +35,9 @@ var vmClasses = new Vue({
             str = str + time;
             return this.classes[str];
         },
-        nearby: function(week, range) {
-            var range = range || 1;
-            return Math.abs(week - classes.settings.thisWeek) <= range;
+        hasGroups: function(dateString, offsetWeeks, offsetDays, time) {
+            var theClass = this.getClass(dateString, offsetWeeks, offsetDays, time);
+            return theClass && theClass.group ? true : false;
         }
     },
     filters: {

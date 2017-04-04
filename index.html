@@ -55,16 +55,34 @@
                 <tr>
                     <th rowspan="2">{{ timeGroup[0].text }}</th>
                     <td v-for="day in 7">
+                    <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
+                    <span v-for="(theClass, classNo) in getClass(startDate, week - 1, day - 1, key).classes" class="groups">
+                        {{classNo + 1}}.{{theClass.subject}}
+                    </span>
+                    </template>
+                    <template v-else>
+                    <span>
                         {{ getClass(startDate, week - 1, day - 1, key)
                             ? getClass(startDate, week - 1, day - 1, key).subject
                             : "&nbsp;" }}
+                    </span>
+                    </template>
                     </td>
                 </tr>
                 <tr>
                     <td v-for="day in 7">
+                    <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
+                    <span v-for="(theClass, classNo) in getClass(startDate, week - 1, day - 1, key).classes" class="groups">
+                        {{classNo + 1}}.{{theClass.detail}}[{{groups[theClass.groupInfo[0].toString()].text[theClass.groupInfo[1]-1]}}]
+                    </span>
+                    </template>
+                    <template v-else>
+                    <span>
                         {{ getClass(startDate, week - 1, day - 1, key)
                             ? getClass(startDate, week - 1, day - 1, key).detail
                             : "&nbsp;" }}
+                    </span>
+                    </template>
                     </td>
                 </tr>
                 </template>

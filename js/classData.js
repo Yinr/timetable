@@ -14,10 +14,20 @@ var classes = {
         p: [{ text: "下午", start: "13:30", end: "16:30" }]
     },
     place: ["原幼儿园楼3楼教室", "西-8教", "西-1教"],
-    groups: null,
+    groups: {
+        '1': {
+            title: "急诊见习分组",
+            text: ["第一组", "第二组", "第三组", "第四组"]
+        },
+        '2': {
+            title: "针灸治疗见习分组",
+            text: ["分组-1", "分组-2", "分组-3", "分组-4", "分组-5", "分组-6", "分组-7", "分组-8", "分组-9", "分组-10", "分组-11", "分组-12"]
+        }
+    },
     settings: {
         showAllWeeks: false,
-        thisWeek: 0
+        thisWeek: 0,
+        group: null
     },
     classes: {
         "2017/2/20a": {
@@ -63,8 +73,16 @@ var classes = {
             detail: "胡元会"
         },
         "2017/3/2a": {
-            subject: "西医内科",
-            detail: "急诊见习"
+            group: true,
+            classes: [{
+                groupInfo: [1, 1],
+                subject: "西医内科",
+                detail: "急诊见习"
+            }, {
+                groupInfo: [1, 2],
+                subject: "西医内科",
+                detail: "急诊见习"
+            }]
         },
         "2017/3/2p": {
             subject: "外科学概论",
@@ -86,8 +104,16 @@ var classes = {
             detail: "胡元会"
         },
         "2017/3/9a": {
-            subject: "西医内科",
-            detail: "急诊见习"
+            group: true,
+            classes: [{
+                groupInfo: [1, 3],
+                subject: "西医内科",
+                detail: "急诊见习"
+            }, {
+                groupInfo: [1, 4],
+                subject: "西医内科",
+                detail: "急诊见习"
+            }]
         },
         "2017/3/9p": {
             subject: "外科学概论",

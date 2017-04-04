@@ -6,4 +6,10 @@
             margin-top: 5px;
         }
     }
+    td span {
+        display: block;
+        &.groups {
+            font-size: 70%;
+        }
+    }
 }
