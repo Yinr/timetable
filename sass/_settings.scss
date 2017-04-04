@@ -1,14 +1,21 @@
 $radius: 3px;
-#showAllWeeks {
+.showAllWeeks {
     width: 100%;
-    text-decoration: underline;
+    // text-decoration: underline;
     border-style: none;
-    border-bottom-left-radius: $radius;
-    border-bottom-right-radius: $radius;
+    border-radius: $radius;
     &::before {
         content: '> ';
     }
     &::after {
         content: ' <';
+    }
+    &.showAllWeeks-top {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &.showAllWeeks-bottom {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }

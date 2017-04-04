@@ -38,6 +38,11 @@
                 </span>
             </p>
         </div>
+        <div class="settings settings-top">
+            <button type="button" class="showAllWeeks showAllWeeks-top" @click="toggleShowingWeeks">
+                {{settings.showAllWeeks ? '隐藏远期课表' : '显示全部课表'}}
+            </button>
+        </div>
         <table class="classTable">
             <tbody v-for="week in weeks" class="week-table" v-show="settings.showAllWeeks || nearby(week)">
                 <tr :id="'week' + (week + startWeek - 1)" class="week">
@@ -65,8 +70,10 @@
                 </template>
             </tbody>
         </table>
-        <div class="settings">
-            <button id="showAllWeeks" @click="toggleShowingWeeks" type="button">{{settings.showAllWeeks ? '隐藏远期课表' : '显示全部课表'}}</button>
+        <div class="settings settings-bottom">
+            <button type="button" class="showAllWeeks showAllWeeks-bottom" @click="toggleShowingWeeks">
+                {{settings.showAllWeeks ? '隐藏远期课表' : '显示全部课表'}}
+            </button>
         </div>
     </div>
 
