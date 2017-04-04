@@ -11,7 +11,8 @@ var classes = {
     },
     classTime: {
         a: [{ text: "上午", start: "8:30", end: "11:30" }],
-        p: [{ text: "下午", start: "13:30", end: "16:30" }]
+        p: [{ text: "下午", start: "13:30", end: "16:30" }],
+        e: [{ text: "晚上", start: "6:00", end: "8:00"}]
     },
     place: ["原幼儿园楼3楼教室", "西-8教", "西-1教"],
     groups: {
@@ -219,6 +220,14 @@ var classes = {
             subject: "外科学概论",
             detail: "李军（外）"
         },
+        "2017/4/6e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 2],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
         "2017/4/7a": {
             subject: "西医内科",
             detail: "刘绍能"
@@ -226,6 +235,54 @@ var classes = {
         "2017/4/7p": {
             subject: "西医内科",
             detail: "周斌"
+        },
+        "2017/4/7e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 6],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/8a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 7],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 8],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/8p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 9],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/9a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 10],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/9p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 11],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 12],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
         },
         "2017/4/10a": {
             subject: "针灸医案",
@@ -258,6 +315,78 @@ var classes = {
             subject: "外科学概论",
             detail: "李军（外）"
         },
+        "2017/4/13e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 4],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/14a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 5],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 6],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 7],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/14e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 8],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/15a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 9],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 10],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/15p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 11],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/16a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 12],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/16p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 1],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 2],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
         "2017/4/17a": {
             subject: "针灸医案",
             detail: "李瑞"
@@ -289,6 +418,78 @@ var classes = {
             subject: "外科学概论",
             detail: "李军（外）"
         },
+        "2017/4/20e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 6],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/21a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 7],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 8],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 9],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/21e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 10],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/22a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 11],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 12],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/22p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 1],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/23a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 2],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/23p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 3],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 4],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
         "2017/4/24p": {
             subject: "针灸治疗",
             detail: "王燕平"
@@ -316,6 +517,78 @@ var classes = {
             subject: "外科学概论",
             detail: "李军（外）"
         },
+        "2017/4/27e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 8],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/28a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 9],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 10],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 11],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/28e": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 12],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/29a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 1],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 2],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/29p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 3],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/30a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 4],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
+        "2017/4/30p": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 5],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 6],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
+        },
         "2017/5/1p": {
             subject: "针灸治疗",
             detail: "王燕平"
@@ -342,6 +615,22 @@ var classes = {
         "2017/5/4p": {
             subject: "外科学概论",
             detail: "串讲（刘风华）"
+        },
+        "2017/5/5a": {
+            group: true,
+            classes: [{
+                groupInfo: [2, 3],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 4],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 5],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
         },
         "2017/5/8p": {
             subject: "针灸治疗",
