@@ -12,7 +12,7 @@ var classes = {
     classTime: {
         a: [{ text: "上午", start: "8:30", end: "11:30" }],
         p: [{ text: "下午", start: "13:30", end: "16:30" }],
-        e: [{ text: "晚上", start: "6:00", end: "8:00"}]
+        e: [{ text: "晚上", start: "17:00", end: "20:00"}]
     },
     place: ["原幼儿园楼3楼教室", "西-8教", "西-1教"],
     groups: {
