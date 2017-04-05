@@ -228,10 +228,6 @@ var classes = {
                 detail: "见习"
             }]
         },
-        "2017/4/7p": {
-            subject: "西医内科",
-            detail: "周斌"
-        },
         "2017/4/7e": {
             group: true,
             classes: [{
