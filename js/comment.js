@@ -25,3 +25,11 @@ var vmComment = new Vue({
         // 多说公共JS代码 end
     }
 });
+
+window.onload = function() {
+    var head = document.getElementsByTagName('head')[0];
+    var styleEl = document.createElement('style');
+    styleEl.type = "text/css";
+    styleEl.innerHTML = ".ds-alert {display: none;}"
+    head.appendChild(styleEl);　
+}
