@@ -56,9 +56,9 @@
                     <th rowspan="2">{{ timeGroup[0].text }}</th>
                     <td v-for="day in 7">
                     <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
-                    <template v-for="(theClass, classNo) in getClass(startDate, week - 1, day - 1, key).classes">
+                    <template v-for="theClass in getClass(startDate, week - 1, day - 1, key).classes">
                     <span v-if="theClass.groupInfo" class="groups">
-                        {{classNo + 1}}.{{theClass.subject}}
+                        [{{groups[theClass.groupInfo[0].toString()].text[theClass.groupInfo[1]-1]}}]:{{theClass.subject}}
                     </span>
                     <span v-else class="groups">
                         {{theClass.subject}}
@@ -77,9 +77,9 @@
                 <tr>
                     <td v-for="day in 7">
                     <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
-                    <template v-for="(theClass, classNo) in getClass(startDate, week - 1, day - 1, key).classes" class="groups">
+                    <template v-for="theClass in getClass(startDate, week - 1, day - 1, key).classes" class="groups">
                     <span v-if="theClass.groupInfo" class="groups">
-                        {{classNo + 1}}.{{theClass.detail}}[{{groups[theClass.groupInfo[0].toString()].text[theClass.groupInfo[1]-1]}}]
+                        [{{groups[theClass.groupInfo[0].toString()].text[theClass.groupInfo[1]-1]}}]:{{theClass.detail}}
                     </span>
                     <span v-else class="groups">
                         {{theClass.detail}}
