@@ -23,6 +23,10 @@ var classes = {
         '2': {
             title: "针灸治疗见习分组",
             text: ["分组-1", "分组-2", "分组-3", "分组-4", "分组-5", "分组-6", "分组-7", "分组-8", "分组-9", "分组-10", "分组-11", "分组-12"]
+        },
+        '3': {
+            title: "泌尿科见习分组",
+            text: ["第一组", "第二组", "第三组"]
         }
     },
     settings: {
@@ -213,8 +217,16 @@ var classes = {
             subject: "中医儿科"
         },
         "2017/4/6a": {
-            subject: "外科学概论",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 1],
+                subject: "外科学概论",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 1],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
         },
         "2017/4/6p": {
             subject: "西医内科",
@@ -300,8 +312,16 @@ var classes = {
             detail: "占永立"
         },
         "2017/4/13a": {
-            subject: "外科学概论",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 2],
+                subject: "外科学概论",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 3],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
         },
         "2017/4/13p": {
             subject: "外科学概论",
@@ -403,8 +423,16 @@ var classes = {
             detail: "占永立"
         },
         "2017/4/20a": {
-            subject: "外科学概论",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 3],
+                subject: "外科学概论",
+                detail: "见习"
+            }, {
+                groupInfo: [2, 5],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
         },
         "2017/4/20p": {
             subject: "外科学概论",
@@ -502,8 +530,15 @@ var classes = {
             detail: "张培彤"
         },
         "2017/4/27a": {
-            subject: "西医内科",
-            detail: "心血管见习"
+            group: true,
+            classes: [{
+                subject: "西医内科",
+                detail: "心血管见习"
+            }, {
+                groupInfo: [2, 7],
+                subject: "针灸治疗学",
+                detail: "见习"
+            }]
         },
         "2017/4/27p": {
             subject: "外科学概论",
