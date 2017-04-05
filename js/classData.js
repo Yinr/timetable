@@ -216,6 +216,10 @@ var classes = {
             subject: "外科学概论",
             detail: "见习"
         },
+        "2017/4/6p": {
+            subject: "西医内科",
+            detail: "刘绍能"
+        },
         "2017/4/6e": {
             group: true,
             classes: [{
@@ -223,10 +227,6 @@ var classes = {
                 subject: "针灸治疗学",
                 detail: "见习"
             }]
-        },
-        "2017/4/7a": {
-            subject: "西医内科",
-            detail: "刘绍能"
         },
         "2017/4/7p": {
             subject: "西医内科",
