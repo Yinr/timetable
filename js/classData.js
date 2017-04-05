@@ -216,10 +216,6 @@ var classes = {
             subject: "外科学概论",
             detail: "见习"
         },
-        "2017/4/6p": {
-            subject: "外科学概论",
-            detail: "李军（外）"
-        },
         "2017/4/6e": {
             group: true,
             classes: [{
