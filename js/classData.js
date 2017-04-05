@@ -225,7 +225,7 @@ var classes = {
             }, {
                 groupInfo: [2, 1],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/6p": {
@@ -237,7 +237,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 2],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }]
         },
         "2017/4/7e": {
@@ -245,7 +245,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 6],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/8a": {
@@ -253,11 +253,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 7],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }, {
                 groupInfo: [2, 8],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/8p": {
@@ -265,7 +265,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 9],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-赵百孝"
             }]
         },
         "2017/4/9a": {
@@ -273,7 +273,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 10],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }]
         },
         "2017/4/9p": {
@@ -281,11 +281,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 11],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马惠芳"
             }, {
                 groupInfo: [2, 12],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/10a": {
@@ -320,7 +320,7 @@ var classes = {
             }, {
                 groupInfo: [2, 3],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/13p": {
@@ -332,7 +332,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 4],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }]
         },
         "2017/4/14a": {
@@ -340,15 +340,15 @@ var classes = {
             classes: [{
                 groupInfo: [2, 5],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马文珠"
             }, {
                 groupInfo: [2, 6],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }, {
                 groupInfo: [2, 7],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-张莉"
             }]
         },
         "2017/4/14e": {
@@ -356,7 +356,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 8],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/15a": {
@@ -364,11 +364,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 9],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }, {
                 groupInfo: [2, 10],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/15p": {
@@ -376,7 +376,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 11],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-赵百孝"
             }]
         },
         "2017/4/16a": {
@@ -384,7 +384,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 12],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }]
         },
         "2017/4/16p": {
@@ -392,11 +392,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 1],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马惠芳"
             }, {
                 groupInfo: [2, 2],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/17a": {
@@ -431,7 +431,7 @@ var classes = {
             }, {
                 groupInfo: [2, 5],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/20p": {
@@ -443,7 +443,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 6],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }]
         },
         "2017/4/21a": {
@@ -451,15 +451,15 @@ var classes = {
             classes: [{
                 groupInfo: [2, 7],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马文珠"
             }, {
                 groupInfo: [2, 8],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }, {
                 groupInfo: [2, 9],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-张莉"
             }]
         },
         "2017/4/21e": {
@@ -467,7 +467,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 10],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/22a": {
@@ -475,11 +475,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 11],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }, {
                 groupInfo: [2, 12],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/22p": {
@@ -487,7 +487,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 1],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-赵百孝"
             }]
         },
         "2017/4/23a": {
@@ -495,7 +495,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 2],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }]
         },
         "2017/4/23p": {
@@ -503,11 +503,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 3],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马慧芳"
             }, {
                 groupInfo: [2, 4],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/24p": {
@@ -537,7 +537,7 @@ var classes = {
             }, {
                 groupInfo: [2, 7],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/27p": {
@@ -549,7 +549,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 8],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }]
         },
         "2017/4/28a": {
@@ -557,15 +557,15 @@ var classes = {
             classes: [{
                 groupInfo: [2, 9],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马文珠"
             }, {
                 groupInfo: [2, 10],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }, {
                 groupInfo: [2, 11],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-张莉"
             }]
         },
         "2017/4/28e": {
@@ -573,7 +573,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 12],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/4/29a": {
@@ -581,11 +581,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 1],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-郭长青"
             }, {
                 groupInfo: [2, 2],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-辛随成"
             }]
         },
         "2017/4/29p": {
@@ -593,7 +593,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 3],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-赵百孝"
             }]
         },
         "2017/4/30a": {
@@ -601,7 +601,7 @@ var classes = {
             classes: [{
                 groupInfo: [2, 4],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }]
         },
         "2017/4/30p": {
@@ -609,11 +609,11 @@ var classes = {
             classes: [{
                 groupInfo: [2, 5],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马惠芳"
             }, {
                 groupInfo: [2, 6],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李志刚"
             }]
         },
         "2017/5/1p": {
@@ -648,15 +648,15 @@ var classes = {
             classes: [{
                 groupInfo: [2, 3],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-马文珠"
             }, {
                 groupInfo: [2, 4],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-李瑞"
             }, {
                 groupInfo: [2, 5],
                 subject: "针灸治疗学",
-                detail: "见习"
+                detail: "见习-张莉"
             }]
         },
         "2017/5/8p": {
