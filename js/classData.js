@@ -462,6 +462,10 @@ var classes = {
                 detail: "见习-张莉"
             }]
         },
+        "2017/4/21p": {
+            subject: "外科学概论",
+            detail: "李军（外）"
+        },
         "2017/4/21e": {
             group: true,
             classes: [{
