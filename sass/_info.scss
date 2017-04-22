@@ -1,9 +1,26 @@
-.class-time {
-    display: inline-block;
-    .time {
-        border-bottom: 1px solid #eee;
+.info {
+    .class-link {
+        font-size: 70%;
+        text-decoration: none;
+
+        &::before {
+            content: " [";
+        }
+
+        &::after {
+            content: "] ";
+        }
     }
-    &:after {
-        content: " | ";
+
+    .class-time {
+        display: inline-block;
+
+        .time {
+            border-bottom: 1px solid #eee;
+        }
+
+        &:after {
+            content: " | ";
+        }
     }
 }

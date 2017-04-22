@@ -1,22 +1,29 @@
 $radius: 3px;
-.showAllWeeks {
-    padding: 5px 0;
-    width: 100%;
-    // text-decoration: underline;
-    border-style: none;
-    border-radius: $radius;
-    &::before {
-        content: '> ';
-    }
-    &::after {
-        content: ' <';
-    }
-    &.showAllWeeks-top {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-    &.showAllWeeks-bottom {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+
+.settings {
+    .showAllWeeks {
+        padding: 5px 0;
+        width: 100%;
+        // text-decoration: underline;
+        border-style: none;
+        border-radius: $radius;
+
+        &::before {
+            content: '> ';
+        }
+
+        &::after {
+            content: ' <';
+        }
+
+        &.showAllWeeks-top {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &.showAllWeeks-bottom {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
     }
 }
