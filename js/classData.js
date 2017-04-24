@@ -625,10 +625,6 @@ var classes = {
                 detail: "见习-李志刚"
             }]
         },
-        "2017/5/1p": {
-            subject: "针灸治疗",
-            detail: "王燕平"
-        },
         "2017/5/2a": {
             group: true,
             classes: [{
