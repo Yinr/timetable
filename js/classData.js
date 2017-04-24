@@ -529,10 +529,6 @@ var classes = {
         "2017/4/26a": {
             subject: "中医儿科"
         },
-        "2017/4/26p": {
-            subject: "西医内科",
-            detail: "张培彤"
-        },
         "2017/4/27a": {
             group: true,
             classes: [{
