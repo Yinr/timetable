@@ -25,7 +25,7 @@ var classes = {
             text: ["组-1", "组-2", "组-3", "组-4", "组-5", "组-6", "组-7", "组-8", "组-9", "组-10", "组-11", "组-12"]
         },
         '3': {
-            title: "泌尿科见习分组",
+            title: "医院见习分组",
             text: ["第一组", "第二组", "第三组"]
         }
     },
@@ -519,8 +519,12 @@ var classes = {
             detail: "王燕平"
         },
         "2017/4/25a": {
-            subject: "中医妇科",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 1],
+                subject: "中医妇科",
+                detail: "见习"
+            }]
         },
         "2017/4/25p": {
             subject: "西医内科",
@@ -532,6 +536,7 @@ var classes = {
         "2017/4/27a": {
             group: true,
             classes: [{
+                groupInfo: [3, 1],
                 subject: "西医内科",
                 detail: "心血管见习"
             }, {
@@ -555,6 +560,10 @@ var classes = {
         "2017/4/28a": {
             group: true,
             classes: [{
+                groupInfo: [3, 2],
+                subject: "西医内科",
+                detail: "心血管见习"
+            }, {
                 groupInfo: [2, 9],
                 subject: "针灸治疗学",
                 detail: "见习-马文珠"
@@ -621,8 +630,12 @@ var classes = {
             detail: "王燕平"
         },
         "2017/5/2a": {
-            subject: "中医妇科",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 2],
+                subject: "中医妇科",
+                detail: "见习"
+            }]
         },
         "2017/5/2p": {
             subject: "西医内科",
@@ -636,8 +649,12 @@ var classes = {
             detail: "姜泉"
         },
         "2017/5/4a": {
-            subject: "西医内科",
-            detail: "心血管见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 3],
+                subject: "西医内科",
+                detail: "心血管见习"
+            }]
         },
         "2017/5/4p": {
             subject: "外科学概论",
@@ -664,8 +681,12 @@ var classes = {
             detail: "王燕平"
         },
         "2017/5/9a": {
-            subject: "中医妇科",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [3, 3],
+                subject: "中医妇科",
+                detail: "见习"
+            }]
         },
         "2017/5/9p": {
             subject: "西医内科",
