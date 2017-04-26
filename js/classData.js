@@ -708,6 +708,10 @@ var classes = {
             subject: "外科学概论",
             detail: "考试"
         },
+        "2017/5/13a": {
+            subject: "体测",
+            detail: "测试"
+        },
         "2017/5/15p": {
             subject: "针灸治疗",
             detail: "王燕平"
