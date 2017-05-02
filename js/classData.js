@@ -644,10 +644,6 @@ var classes = {
         "2017/5/3a": {
             subject: "中医儿科"
         },
-        "2017/5/3p": {
-            subject: "西医内科",
-            detail: "姜泉"
-        },
         "2017/5/4a": {
             group: true,
             classes: [{
