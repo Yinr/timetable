@@ -654,7 +654,7 @@ var classes = {
         },
         "2017/5/4p": {
             subject: "外科学概论",
-            detail: "串讲（刘风华）"
+            detail: "李军\n串讲（刘风华）"
         },
         "2017/5/5a": {
             group: true,
@@ -671,6 +671,10 @@ var classes = {
                 subject: "针灸治疗学",
                 detail: "见习-张莉"
             }]
+        },
+        "2017/5/5p": {
+            subject: "西医内科",
+            detail: "张培彤"
         },
         "2017/5/8p": {
             subject: "针灸治疗",
