@@ -654,7 +654,7 @@ var classes = {
         },
         "2017/5/4p": {
             subject: "外科学概论",
-            detail: "李军\n串讲（刘风华）"
+            detail: "串讲（刘风华）"
         },
         "2017/5/5a": {
             group: true,
