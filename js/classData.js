@@ -712,10 +712,6 @@ var classes = {
             subject: "体测",
             detail: "测试"
         },
-        "2017/5/15p": {
-            subject: "针灸治疗",
-            detail: "王燕平"
-        },
         "2017/5/16a": {
             subject: "中医妇科",
             detail: "考试"
@@ -783,6 +779,10 @@ var classes = {
         "2017/5/25a": {
             subject: "西医内科",
             detail: "呼吸科见习"
+        },
+        "2017/5/26a": {
+            subject: "针灸治疗",
+            detail: "王燕平"
         },
         "2017/5/29p": {
             subject: "针灸治疗",
