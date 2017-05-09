@@ -25,8 +25,12 @@ var classes = {
             text: ["组-1", "组-2", "组-3", "组-4", "组-5", "组-6", "组-7", "组-8", "组-9", "组-10", "组-11", "组-12"]
         },
         '3': {
-            title: "医院见习分组",
+            title: "医院见习分组（三组）",
             text: ["第一组", "第二组", "第三组"]
+        },
+        '4': {
+            title: "医院见习分组（两组）",
+            text: ["第一组", "第二组"]
         }
     },
     settings: {
@@ -693,8 +697,12 @@ var classes = {
             detail: "李国勤"
         },
         "2017/5/10a": {
-            subject: "中医儿科",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 1],
+                subject: "中医儿科",
+                detail: "见习"
+            }]
         },
         "2017/5/10p": {
             subject: "西医内科",
@@ -717,8 +725,12 @@ var classes = {
             detail: "王寅"
         },
         "2017/5/17a": {
-            subject: "中医儿科",
-            detail: "见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 2],
+                subject: "中医儿科",
+                detail: "见习"
+            }]
         },
         "2017/5/17p": {
             subject: "西医内科",
