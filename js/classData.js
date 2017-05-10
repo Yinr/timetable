@@ -709,8 +709,12 @@ var classes = {
             detail: "姜泉"
         },
         "2017/5/11a": {
-            subject: "西医内科",
-            detail: "内分泌见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 1],
+                subject: "西医内科",
+                detail: "内分泌见习"
+            }]
         },
         "2017/5/11p": {
             subject: "外科学概论",
@@ -737,8 +741,12 @@ var classes = {
             detail: "张丽娜"
         },
         "2017/5/18a": {
-            subject: "西医内科",
-            detail: "内分泌见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 2],
+                subject: "西医内科",
+                detail: "内分泌见习"
+            }]
         },
         "2017/5/19a": {
             subject: "执医理论",
