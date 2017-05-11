@@ -720,13 +720,29 @@ var classes = {
             subject: "外科学概论",
             detail: "考试"
         },
+        "2017/5/12a": {
+            subject: "执医",
+            detail: "答疑"
+        },
+        "2017/5/12p": {
+            subject: "执医",
+            detail: "答疑"
+        },
         "2017/5/13a": {
             subject: "体测",
             detail: "测试"
         },
+        "2017/5/15e": {
+            subject: "执医",
+            detail: "答疑"
+        },
         "2017/5/16p": {
             subject: "西医内科",
             detail: "王寅"
+        },
+        "2017/5/16e": {
+            subject: "执医",
+            detail: "答疑"
         },
         "2017/5/17a": {
             group: true,
