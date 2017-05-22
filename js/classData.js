@@ -706,7 +706,7 @@ var classes = {
         },
         "2017/5/10p": {
             subject: "西医内科",
-            detail: "姜泉"
+            detail: "张丽娜"
         },
         "2017/5/11a": {
             group: true,
@@ -754,7 +754,7 @@ var classes = {
         },
         "2017/5/17p": {
             subject: "西医内科",
-            detail: "张丽娜"
+            detail: "姜泉"
         },
         "2017/5/18a": {
             group: true,
