@@ -844,10 +844,6 @@ var classes = {
                 detail: "肾病科见习"
             }]
         },
-        "2017/6/5p": {
-            subject: "针灸治疗",
-            detail: "王燕平"
-        },
         "2017/6/6a": {
             group: true,
             classes: [{
@@ -871,6 +867,10 @@ var classes = {
         "2017/6/7p": {
             subject: "西医内科",
             detail: "张丽娜"
+        },
+        "2017/6/9a": {
+            subject: "针灸治疗",
+            detail: "王燕平"
         },
         "2017/6/12p": {
             subject: "针灸治疗",
