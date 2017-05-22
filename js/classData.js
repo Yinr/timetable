@@ -752,10 +752,6 @@ var classes = {
                 detail: "见习"
             }]
         },
-        "2017/5/17p": {
-            subject: "西医内科",
-            detail: "姜泉"
-        },
         "2017/5/18a": {
             group: true,
             classes: [{
