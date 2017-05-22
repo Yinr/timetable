@@ -820,6 +820,10 @@ var classes = {
             subject: "针灸治疗",
             detail: "王燕平"
         },
+        "2017/5/31p": {
+            subject: "西医内科",
+            detail: "姜泉"
+        },
         "2017/6/1a": {
             subject: "西医内科",
             detail: "肾病科见习"
@@ -835,6 +839,10 @@ var classes = {
         "2017/6/6p": {
             subject: "西医内科",
             detail: "王寅"
+        },
+        "2017/6/7p": {
+            subject: "西医内科",
+            detail: "张丽娜"
         },
         "2017/6/12p": {
             subject: "针灸治疗",
