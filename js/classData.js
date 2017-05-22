@@ -793,8 +793,12 @@ var classes = {
             detail: "王燕平"
         },
         "2017/5/23a": {
-            subject: "西医内科",
-            detail: "针灸见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 1],
+                subject: "西医内科",
+                detail: "针灸见习"
+            }]
         },
         "2017/5/23p": {
             subject: "西医内科",
@@ -833,8 +837,12 @@ var classes = {
             detail: "王燕平"
         },
         "2017/6/6a": {
-            subject: "西医内科",
-            detail: "针灸见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 2],
+                subject: "西医内科",
+                detail: "针灸见习"
+            }]
         },
         "2017/6/6p": {
             subject: "西医内科",
