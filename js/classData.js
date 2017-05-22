@@ -816,7 +816,7 @@ var classes = {
             subject: "针灸治疗",
             detail: "王燕平"
         },
-        "2017/5/29p": {
+        "2017/5/27p": {
             subject: "针灸治疗",
             detail: "王燕平"
         },
