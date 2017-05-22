@@ -812,6 +812,14 @@ var classes = {
             subject: "西医内科",
             detail: "张丽娜"
         },
+        "2017/5/25a": {
+            group: true,
+            classes: [{
+                groupInfo: [4, 1],
+                subject: "西医内科",
+                detail: "肾病科见习"
+            }]
+        },
         "2017/5/26a": {
             subject: "针灸治疗",
             detail: "王燕平"
@@ -833,8 +841,12 @@ var classes = {
             detail: "姜泉"
         },
         "2017/6/1a": {
-            subject: "西医内科",
-            detail: "肾病科见习"
+            group: true,
+            classes: [{
+                groupInfo: [4, 2],
+                subject: "西医内科",
+                detail: "肾病科见习"
+            }]
         },
         "2017/6/5p": {
             subject: "针灸治疗",
