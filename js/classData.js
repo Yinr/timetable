@@ -824,14 +824,6 @@ var classes = {
             subject: "针灸治疗",
             detail: "王燕平"
         },
-        "2017/5/31a": {
-            group: true,
-            classes: [{
-                groupInfo: [4, 1],
-                subject: "西医内科",
-                detail: "呼吸科见习"
-            }]
-        },
         "2017/6/1a": {
             group: true,
             classes: [{
@@ -879,6 +871,14 @@ var classes = {
         "2017/6/13p": {
             subject: "西医内科",
             detail: "串讲（齐文升）"
+        },
+        "2017/6/14a": {
+            group: true,
+            classes: [{
+                groupInfo: [4, 1],
+                subject: "西医内科",
+                detail: "呼吸科见习"
+            }]
         },
         "2017/6/15p": {
             subject: "西医内科",
