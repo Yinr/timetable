@@ -806,7 +806,7 @@ var classes = {
         },
         "2017/5/24p": {
             subject: "西医内科",
-            detail: "张丽娜"
+            detail: "姜泉"
         },
         "2017/5/25a": {
             group: true,
