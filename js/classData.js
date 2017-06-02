@@ -875,7 +875,7 @@ var classes = {
         "2017/6/14a": {
             group: true,
             classes: [{
-                groupInfo: [4, 1],
+                groupInfo: [4, 2],
                 subject: "西医内科",
                 detail: "呼吸科见习"
             }]
