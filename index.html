@@ -106,32 +106,12 @@
         </div>
     </div>
 
-    <div id="comment" class="comment" v-if="duoshuo_name">
-        <!-- 多说分享框 start -->
-        <div class="ds-share flat" :data-thread-key="key" :data-title="title" :data-images="image" :data-content="content" :data-url="url">
-            <div class="ds-share-inline">
-                <ul class="ds-share-icons-16">
-
-                    <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-                    <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                    <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-                    <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                    <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-
-                </ul>
-                <div class="ds-share-icons-more">
-                </div>
-            </div>
-        </div>
-        <!-- 多说分享框 end -->
-        <!-- 多说评论框 start -->
-        <div class="ds-thread" :data-thread-key="key" :data-title="title" :data-url="url"></div>
-        <!-- 多说评论框 end -->
+    <div id="comment" class="comment">
+        <p>由于多说停止服务，现打算将评论服务转移到 disqus。转移期间评论功能将不可用，敬请谅解。</p>
     </div>
 
     <script src="js/classData.js"></script>
     <script src="js/bindClass.js"></script>
-    <script src="js/comment.js"></script>
 
     <footer>
         <!-- 站长统计 -->
