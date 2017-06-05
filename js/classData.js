@@ -856,6 +856,10 @@ var classes = {
             subject: "西医内科",
             detail: "张丽娜"
         },
+        "2017/6/8a": {
+            subject: "西医内科",
+            detail: "周斌"
+        },
         "2017/6/9a": {
             subject: "针灸治疗",
             detail: "王燕平"
