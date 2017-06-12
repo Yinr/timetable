@@ -872,10 +872,6 @@ var classes = {
             subject: "中医妇科",
             detail: "考试"
         },
-        "2017/6/13p": {
-            subject: "西医内科",
-            detail: "串讲（齐文升）"
-        },
         "2017/6/14a": {
             group: true,
             classes: [{
@@ -883,6 +879,10 @@ var classes = {
                 subject: "西医内科",
                 detail: "呼吸科见习"
             }]
+        },
+        "2017/6/15a": {
+            subject: "西医内科",
+            detail: "串讲（齐文升）"
         },
         "2017/6/15p": {
             subject: "西医内科",
