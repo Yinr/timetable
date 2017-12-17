@@ -19,7 +19,7 @@
             border-bottom: 1px solid #eee;
         }
 
-        &:after {
+        &:not(:last-child):after {
             content: " | ";
         }
     }
