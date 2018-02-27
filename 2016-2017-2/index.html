@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>课表</title>
+    <link rel="icon" href="http://yinrs.win/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://yinrs.win/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/css/min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.3/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="classes">
+        <h1>{{ title }}</h1>
+        <div class="description">
+            <small v-for="(text, type) in description">
+                <em>{{ type }}:</em>{{ text }}<br/>
+            </small>
+        </div>
+        <div class="info">
+            <p>
+                <strong>上课时间:</strong>
+                <template v-for="timeGroup in classTime">
+                <span v-for="time in timeGroup" class="class-time">
+                    <span class="text">
+                        {{ time.text }}
+                    </span>
+                    <span class="time">
+                        {{ time.start }}~{{ time.end }}.
+                    </span>
+                </span>
+                </template>
+            </p>
+            <p><strong>上课地点:</strong>
+                <span v-for="place in place">
+                    {{ place }}.
+                </span>
+                <a class="class-link" href="/classroom">查看北中医教室方位</a>
+            </p>
+        </div>
+        <div class="settings settings-top">
+            <button type="button" class="showAllWeeks showAllWeeks-top" @click="toggleShowingWeeks">
+                {{settings.showAllWeeks ? '隐藏远期课表' : '显示全部课表'}}
+            </button>
+        </div>
+        <table class="classTable">
+            <tbody v-for="week in weeks" class="week-table" v-show="settings.showAllWeeks || nearby(week)">
+                <tr :id="'week' + (week + startWeek - 1)" class="week">
+                    <th>第 {{ week | getWeek }} 周</th>
+                    <th v-for="day in 7">
+                        {{ startDate | getDateHead(week - 1, day -1) }}
+                    </th>
+                </tr>
+                <template v-for="(timeGroup, key) in classTime">
+                <tr>
+                    <th rowspan="2">{{ timeGroup[0].text }}</th>
+                    <td v-for="day in 7">
+                    <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
+                    <template v-for="theClass in getClass(startDate, week - 1, day - 1, key).classes">
+                    <span v-if="theClass.groupInfo" class="groups">
+                        [{{groups[theClass.groupInfo[0].toString()].text[theClass.groupInfo[1]-1]}}]:{{theClass.subject}}
+                    </span>
+                    <span v-else class="groups">
+                        {{theClass.subject}}
+                    </span>
+                    </template>
+                    </template>
+                    <template v-else>
+                    <span>
+                        {{ getClass(startDate, week - 1, day - 1, key)
+                            ? getClass(startDate, week - 1, day - 1, key).subject
+                            : "&nbsp;" }}
+                    </span>
+                    </template>
+                    </td>
+                </tr>
+                <tr>
+                    <td v-for="day in 7">
+                    <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
+                    <template v-for="theClass in getClass(startDate, week - 1, day - 1, key).classes" class="groups">
+                    <span v-if="theClass.groupInfo" class="groups">
+                        [{{groups[theClass.groupInfo[0].toString()].text[theClass.groupInfo[1]-1]}}]:{{theClass.detail}}
+                    </span>
+                    <span v-else class="groups">
+                        {{theClass.detail}}
+                    </span>
+                    </template>
+                    </template>
+                    <template v-else>
+                    <span>
+                        {{ getClass(startDate, week - 1, day - 1, key)
+                            ? getClass(startDate, week - 1, day - 1, key).detail
+                            : "&nbsp;" }}
+                    </span>
+                    </template>
+                    </td>
+                </tr>
+                </template>
+            </tbody>
+        </table>
+        <div class="settings settings-bottom">
+            <button type="button" class="showAllWeeks showAllWeeks-bottom" @click="toggleShowingWeeks">
+                {{settings.showAllWeeks ? '隐藏远期课表' : '显示全部课表'}}
+            </button>
+        </div>
+    </div>
+
+    <div id="comment" class="comment">
+        <p>由于多说停止服务，现打算将评论服务转移到 disqus。转移期间评论功能将不可用，敬请谅解。</p>
+    </div>
+
+    <script src="./classData.js"></script>
+    <script src="/js/bindClass.js"></script>
+
+    <footer>
+        <hr>
+        <!-- 站长统计 -->
+        <small>
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261297347'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261297347%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+        </small>
+        <!-- copyright -->
+        <small>
+            <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+            <p>copyright &copy; 2017 Yinr.</p>
+        </small>
+    </footer>
+</body>
+
+</html>
