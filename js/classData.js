@@ -26,7 +26,8 @@ var classes = {
         	subject: "皮肤病学"
         },
         "2018/3/1a": {
-        	subject: "中西医结合骨伤"
+        	subject: "中西医结合骨伤",
+            detail: "腰椎间盘突出症"
         },
         "2018/3/1p": {
         	subject: "急诊学"
@@ -42,7 +43,8 @@ var classes = {
         	subject: "皮肤病学"
         },
         "2018/3/8a": {
-        	subject: "中西医结合骨伤"
+        	subject: "中西医结合骨伤",
+            detail: "骨关节病"
         },
         "2018/3/8p": {
         	subject: "急诊学"
@@ -58,7 +60,8 @@ var classes = {
         	subject: "皮肤病学"
         },
         "2018/3/15a": {
-        	subject: "中西医结合骨伤"
+        	subject: "中西医结合骨伤",
+            detail: "股骨头坏死"
         },
         "2018/3/15p": {
         	subject: "急诊学"
@@ -73,7 +76,8 @@ var classes = {
         	subject: "皮肤病学"
         },
         "2018/3/22a": {
-        	subject: "中西医结合骨伤"
+        	subject: "中西医结合骨伤",
+            detail: "颈椎"
         },
         "2018/3/22p": {
         	subject: "神经病学",
@@ -89,7 +93,8 @@ var classes = {
         	subject: "皮肤病学"
         },
         "2018/3/29a": {
-        	subject: "中西医结合骨伤"
+        	subject: "中西医结合骨伤",
+            detail: "创伤"
         },
         "2018/3/29p": {
         	subject: "神经病学",
