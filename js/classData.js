@@ -7,6 +7,15 @@ var classes = {
     description: {
         "选修课": "神经病学18学时、急诊学63学时、中西医结合骨伤18学时、皮肤病学36学时"
     },
+    links: [{
+            text: "课件",
+            href: "https://pan.baidu.com/s/1gcIKPeWV5elvb8hPr4QULQ",
+            info: "百度云，密码: ie46"
+        }, {
+            text: "课件",
+            href: "https://cloud.yinr.cc/s/pcFp9eCZ3SbgXo3?path=%2F2017-2018-2",
+            info: "备用,YinrCloud"
+        }],
     classTime: {
         a: [{ text: "上午", start: "8:30", end: "11:30" }],
         p: [{ text: "下午", start: "13:30", end: "16:30" }]

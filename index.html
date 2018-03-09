@@ -18,6 +18,12 @@
                 <em>{{ type }}:</em>{{ text }}<br/>
             </small>
         </div>
+        <div class="links">
+            <small>相关链接：</small>
+            <small v-for="links_data in links">
+                <em><a :href="links_data.href">{{ links_data.text }}</a></em>（{{ links_data.info }}）
+            </small>
+        </div>
         <div class="info">
             <p>
                 <strong>上课时间:</strong>

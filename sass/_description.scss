@@ -4,3 +4,12 @@
     }
     border-bottom: 1px dashed #ddd;
 }
+
+.links {
+    small:nth-child(1)::before {
+        content: "> "
+    }
+    small:not(:nth-child(1)):not(:nth-last-child(1))::after {
+        content: "、"
+    }
+}
