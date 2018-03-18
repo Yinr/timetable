@@ -9,8 +9,8 @@ var classes = {
     },
     links: [{
             text: "课件",
-            href: "https://pan.baidu.com/s/1gcIKPeWV5elvb8hPr4QULQ",
-            info: "百度云，密码: ie46"
+            href: "https://pan.baidu.com/s/1xl6dhTYZhEg5zD87J2Q-Mg",
+            info: "百度云，密码: 92aw"
         }, {
             text: "课件",
             href: "https://cloud.yinr.cc/s/pcFp9eCZ3SbgXo3?path=%2F2017-2018-2",
