@@ -4,6 +4,7 @@ var classes = {
     startDate: "2018/2/26",
     startWeek: 1,
     weeks: 4,
+    daysInWeek: 4,
     description: {
         "选修课": "神经病学18学时、急诊学63学时、中西医结合骨伤18学时、皮肤病学36学时"
     },

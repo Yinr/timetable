@@ -54,14 +54,14 @@
             <tbody v-for="week in weeks" class="week-table" v-show="settings.showAllWeeks || nearby(week)">
                 <tr :id="'week' + (week + startWeek - 1)" class="week">
                     <th>第 {{ week | getWeek }} 周</th>
-                    <th v-for="day in 7">
+                    <th v-for="day in daysInWeek">
                         {{ startDate | getDateHead(week - 1, day -1) }}
                     </th>
                 </tr>
                 <template v-for="(timeGroup, key) in classTime">
                 <tr>
                     <th rowspan="2">{{ timeGroup[0].text }}</th>
-                    <td v-for="day in 7">
+                    <td v-for="day in daysInWeek">
                     <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
                     <template v-for="theClass in getClass(startDate, week - 1, day - 1, key).classes">
                     <span v-if="theClass.groupInfo" class="groups">
@@ -82,7 +82,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td v-for="day in 7">
+                    <td v-for="day in daysInWeek">
                     <template v-if="hasGroups(startDate, week - 1, day - 1, key)">
                     <template v-for="theClass in getClass(startDate, week - 1, day - 1, key).classes" class="groups">
                     <span v-if="theClass.groupInfo" class="groups">
