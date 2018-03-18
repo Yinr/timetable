@@ -3,7 +3,7 @@ var classes = {
     title: "13针八 2017-2018-2 课表",
     startDate: "2018/2/26",
     startWeek: 1,
-    weeks: 12,
+    weeks: 4,
     description: {
         "选修课": "神经病学18学时、急诊学63学时、中西医结合骨伤18学时、皮肤病学36学时"
     },
