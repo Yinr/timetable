@@ -1,0 +1,25 @@
+.classroom {
+    display: inline-block;
+    vertical-align: top;
+    line-height: normal;
+    margin-right: 5px;
+}
+
+.classroom table {
+    display: inline;
+    vertical-align: top;
+}
+
+.classroom table td {
+    width: auto;
+}
+
+.classroom table td[colspan] {
+    background-color: #cce;
+}
+
+@media screen and (max-width: 446px) {
+    body {
+        width: 380px
+    }
+}
