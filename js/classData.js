@@ -6,13 +6,13 @@ var classes = {
     weeks: 20,
     daysInWeek: 7,
     description: {
-        "必修课": "blah",
-        "选修课": "头面部局部解剖学 and so on"
+        "必修课": "临床实践方法学讲座D班；传统文化讲座D、E班；中医经典导读（中医A班）；人文医学职业技能培训课程B、D班",
+        "选修课": "头面部局部解剖学"
     },
     links: [{
         text: "选课系统",
         href: "http://bucmyjs.yinr.cc",
-        info: ""
+        info: "202.204.35.224"
     }],
     classTime: {
         a: [{ text: "上午", start: "8:30", end: "11:30" }],
@@ -20,6 +20,7 @@ var classes = {
         e: [{ text: "晚上", start: "18:00", end: "21:10"}]
     },
     place: ["东校区", "西校区"],
+    groups: {'0': {title: "groups", text: ["1", "2", "3"]}},
     settings: {
         showAllWeeks: false,
         thisWeek: 0,
@@ -55,20 +56,52 @@ var classes = {
             detail: "东-9教"
         },
         "2018/11/30e": {
-        	subject: "传统文化讲座D班",
-            detail: "东-9教"
+            groups: true,
+            classes: [{
+                groupInfo: [0, 1],
+                subject: "传统文化讲座D班",
+                detail: "东-9教"
+            }, {
+                groupInfo: [0, 2],
+                subject: "传统文化讲座E班",
+                detail: "东-10教"
+            }]
         },
         "2018/12/7e": {
-        	subject: "传统文化讲座D班(自)",
-            detail: "东-9教"
+            groups: true,
+            classes: [{
+                groupInfo: [0, 1],
+                subject: "传统文化讲座D班(自)",
+                detail: "东-9教"
+            }, {
+                groupInfo: [0, 2],
+                subject: "传统文化讲座E班(自)",
+                detail: "东-10教"
+            }]
         },
         "2018/12/14e": {
-        	subject: "传统文化讲座D班",
-            detail: "东-9教"
+            groups: true,
+            classes: [{
+                groupInfo: [0, 1],
+                subject: "传统文化讲座D班",
+                detail: "东-9教"
+            }, {
+                groupInfo: [0, 2],
+                subject: "传统文化讲座E班",
+                detail: "东-10教"
+            }]
         },
         "2018/12/21e": {
-        	subject: "传统文化讲座D班",
-            detail: "东-9教"
+            groups: true,
+            classes: [{
+                groupInfo: [0, 1],
+                subject: "传统文化讲座D班(考)",
+                detail: "东-9教"
+            }, {
+                groupInfo: [0, 2],
+                subject: "传统文化讲座E班(考)",
+                detail: "东-10教"
+            }]
         },
         "2018/12/1e": {
         	subject: "中医经典导读（内径A班）",
@@ -117,6 +150,38 @@ var classes = {
         "2019/1/20a": {
         	subject: "人文医学职业技能培训课程D班(自)",
             detail: "东-9教"
+        },
+        "2018/12/1a": {
+        	subject: "人文医学职业技能培训课程B班",
+            detail: "东-10教"
+        },
+        "2018/12/8a": {
+        	subject: "人文医学职业技能培训课程B班(自)",
+            detail: "东-10教"
+        },
+        "2018/12/15a": {
+        	subject: "人文医学职业技能培训课程B班",
+            detail: "东-10教"
+        },
+        "2018/12/22a": {
+        	subject: "人文医学职业技能培训课程B班(自)",
+            detail: "东-10教"
+        },
+        "2018/12/29a": {
+        	subject: "人文医学职业技能培训课程B班",
+            detail: "东-10教"
+        },
+        "2019/1/5a": {
+        	subject: "人文医学职业技能培训课程B班(自)",
+            detail: "东-10教"
+        },
+        "2019/1/12a": {
+        	subject: "人文医学职业技能培训课程B班(自)",
+            detail: "东-10教"
+        },
+        "2019/1/19a": {
+        	subject: "人文医学职业技能培训课程B班(自)",
+            detail: "东-10教"
         }
     }
 };
