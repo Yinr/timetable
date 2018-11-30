@@ -56,7 +56,7 @@ var classes = {
             detail: "东-9教"
         },
         "2018/11/30e": {
-            groups: true,
+            group: true,
             classes: [{
                 groupInfo: [0, 1],
                 subject: "传统文化讲座D班",
@@ -68,7 +68,7 @@ var classes = {
             }]
         },
         "2018/12/7e": {
-            groups: true,
+            group: true,
             classes: [{
                 groupInfo: [0, 1],
                 subject: "传统文化讲座D班(自)",
@@ -80,7 +80,7 @@ var classes = {
             }]
         },
         "2018/12/14e": {
-            groups: true,
+            group: true,
             classes: [{
                 groupInfo: [0, 1],
                 subject: "传统文化讲座D班",
@@ -92,7 +92,7 @@ var classes = {
             }]
         },
         "2018/12/21e": {
-            groups: true,
+            group: true,
             classes: [{
                 groupInfo: [0, 1],
                 subject: "传统文化讲座D班(考)",
