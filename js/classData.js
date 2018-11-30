@@ -30,6 +30,10 @@ var classes = {
         	subject: "头面部局部解剖学",
             detail: "西-解剖三"
         },
+        "2018/12/14a": {
+        	subject: "头面部局部解剖学(考)",
+            detail: "西-51教"
+        },
         "2018/11/29e": {
         	subject: "临床实践方法学讲座D班",
             detail: "东-9教"
