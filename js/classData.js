@@ -3,8 +3,8 @@ var classes = {
     title: "北中医 2018 级研究生 2019-2020-1 部分课表",
     startDate: "2019/9/9",
     startWeek: 2,
-    weeks: 19,
-    daysInWeek: 7,
+    weeks: 17,
+    daysInWeek: 5,
     description: {
         "公共课": "科研思路与方法（西区学术班）、内经专题讲座（西区班）、针灸推拿学临床研究进展（东直门医院开设）"
     },
