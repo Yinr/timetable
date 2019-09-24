@@ -14,8 +14,8 @@ var classes = {
         info: "202.204.35.224"
     }],
     classTime: {
-        a: [{ text: "上午", start: "8:30", end: "11:30" }],
-        p: [{ text: "下午", start: "13:30", end: "16:30" }],
+        a: [{ text: "上午", start: "8:00", end: "11:30" }],
+        p: [{ text: "下午", start: "14:00", end: "17:20" }],
         e: [{ text: "晚上", start: "18:00", end: "21:10" }]
     },
     place: ["西校区", "东直门医院五层阶梯教室"],
