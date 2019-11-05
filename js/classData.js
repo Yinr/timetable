@@ -68,7 +68,7 @@ var classes = {
         },
         "2019/10/10p": {
             subject: "科研思路与方法",
-            detail: "西-52教"
+            detail: "西-36教"
         },
         "2019/10/15p": {
             subject: "内经专题讲座",
@@ -80,7 +80,7 @@ var classes = {
         },
         "2019/10/17p": {
             subject: "科研思路与方法",
-            detail: "西-52教"
+            detail: "西-36教"
         },
         "2019/10/22p": {
             subject: "内经专题讲座",
@@ -92,7 +92,7 @@ var classes = {
         },
         "2019/10/24p": {
             subject: "科研思路与方法",
-            detail: "西-52教"
+            detail: "西-36教"
         },
         "2019/10/29e": {
             subject: "针灸推拿学临床研究进展",
@@ -104,7 +104,7 @@ var classes = {
         },
         "2019/10/31p": {
             subject: "科研思路与方法",
-            detail: "西-52教"
+            detail: "西-36教"
         },
         "2019/11/4e": {
             subject: "针灸推拿学临床研究进展",
@@ -116,7 +116,7 @@ var classes = {
         },
         "2019/11/7p": {
             subject: "科研思路与方法",
-            detail: "西-52教"
+            detail: "西-36教"
         },
         "2019/11/12e": {
             subject: "针灸推拿学临床研究进展",
@@ -128,7 +128,7 @@ var classes = {
         },
         "2019/11/14p": {
             subject: "科研思路与方法",
-            detail: "西-52教"
+            detail: "西-36教"
         },
         "2019/11/19p": {
             group: true,
